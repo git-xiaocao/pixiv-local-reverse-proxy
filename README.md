@@ -26,13 +26,13 @@ go get golang.org/x/mobile/cmd/gomobile
 Gradle Groovy
 
 ```groovy
-implementation file("pixiv_local_reverse_proxy.aar")
+implementation files("pixiv_local_reverse_proxy.aar")
 ```
 
 Gradle KTS
 
 ```kotlin
-implementation(file("pixiv_local_reverse_proxy.aar"))
+implementation(files("pixiv_local_reverse_proxy.aar"))
 ```
 
 `WebView`设置代理

@@ -13,7 +13,7 @@ func StartServer(bindPort uint16) {
 
 //export StopServer
 func StopServer() {
-
+	PixivLocalReverseProxy.StopServer()
 }
 
 func main() {

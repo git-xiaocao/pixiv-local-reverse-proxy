@@ -14,6 +14,7 @@ import (
 
 var (
 	isDebugMode = false
+	enableLog   = false
 	dnsCache    = struct {
 		Data map[string]string
 		Lock sync.RWMutex
@@ -216,7 +217,7 @@ func StartServer(bindPort string) {
 
 	proxy.OnRequest().HandleConnect(goproxy.AlwaysReject)
 
-	proxy.Verbose = isDebugMode
+	proxy.Verbose = enableLog
 
 	server = &http.Server{Addr: ":" + bindPort, Handler: proxy}
 

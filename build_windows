@@ -1,0 +1,1 @@
+go build -o PixivLocalReverseProxy.dll -buildmode=c-shared cgo\cgo_main.go

@@ -1,0 +1,1 @@
+gomobile bind -target android -o pixiv_local_reverse_proxy.aar

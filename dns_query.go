@@ -41,6 +41,8 @@ var (
 		"app-api.pixiv.net":      false,
 		"oauth.secure.pixiv.net": false,
 		"accounts.pixiv.net":     false,
+		"pixi.net":               false,
+		"www.pixi.net":           false,
 	}
 	//通用host
 	universalMainHost = "pixivision.net"

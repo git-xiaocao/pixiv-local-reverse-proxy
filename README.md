@@ -5,18 +5,23 @@
 # 如何使用?
 
 # Test
+
 直接运行[main_test.go](./main_test.go)里的函数
- 
+
 ![img.png](img.png)
+
+Go版本1.17.1
 
 ## Android
 
 `获取gomobile`
+
 ```console
-go get golang.org/x/mobile/cmd/gomobile
+go install golang.org/x/mobile/cmd/gomobile
 ```
 
 配置环境变量(示例)
+
 1. 指定`ANDROID_HOME`为`Android SDK`安装目录
 2. 指定`ANDROID_NDK_HOME`为 `%ANDROID_HOME%\ndk\23.0.7599858`
 

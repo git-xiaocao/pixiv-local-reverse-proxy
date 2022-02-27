@@ -14,7 +14,6 @@ import (
 
 var (
 	isDebugMode = false
-	enableLog   = false
 	dnsCache    = struct {
 		Data map[string]string
 		Lock sync.RWMutex
@@ -200,7 +199,7 @@ func buildNewDnsConn(hostname, port string) net.Conn {
 	return nil
 }
 
-func StartServer(bindPort string) {
+func StartServer(bindPort string, enableLog bool) {
 	localCa, _ = tls.X509KeyPair(caCert, caKey)
 	localCa.Leaf, _ = x509.ParseCertificate(localCa.Certificate[0])
 	hijacks := make([]string, len(pixivHosts))

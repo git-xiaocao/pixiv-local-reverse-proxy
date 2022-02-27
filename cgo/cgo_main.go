@@ -7,8 +7,8 @@ import (
 )
 
 //export StartServer
-func StartServer(bindPort uint16) {
-	PixivLocalReverseProxy.StartServer(strconv.Itoa(int(bindPort)))
+func StartServer(bindPort uint16, enableLog bool) {
+	PixivLocalReverseProxy.StartServer(strconv.Itoa(int(bindPort)), enableLog)
 }
 
 //export StopServer

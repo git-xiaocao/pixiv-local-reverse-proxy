@@ -214,8 +214,6 @@ func StartServer(bindPort string, enableLog bool) {
 		goproxy.ReqHostIs(hijacks...),
 	).HijackConnect(pixivConnectHijack)
 
-	proxy.OnRequest().HandleConnect(goproxy.AlwaysReject)
-
 	proxy.Verbose = enableLog
 
 	server = &http.Server{Addr: ":" + bindPort, Handler: proxy}

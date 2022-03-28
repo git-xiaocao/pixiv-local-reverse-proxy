@@ -1,6 +1,6 @@
 module pixiv-local-reverse-proxy
 
-go 1.17
+go 1.18
 
 require github.com/elazarl/goproxy v0.0.0-20220115173737-adb46da277ac
 

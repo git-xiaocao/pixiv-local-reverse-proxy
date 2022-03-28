@@ -10,7 +10,7 @@
 
 ![img.png](img.png)
 
-Go版本1.17.1
+Go版本1.18
 
 ## Android
 
